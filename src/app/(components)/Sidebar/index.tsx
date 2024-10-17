@@ -58,6 +58,20 @@ const Sidebar = () => {
             </div>
 
             {/* FOOTER */}
+            <div className="w-full flex flex-col items-start justify-start gap-y-5 pb-3.5">
+                <div className="w-full h-fit">
+                    <button type="button" className="w-full py-5 px-4 bg-[#F6F8FA] flex flex-col items-start justify-start gap-5 rounded-xl">
+                        <div className="flex flex-row items-center justify-start gap-1.5">
+                            <img className='w-[30px] h-auto' src="/upgrade-plan-icon.svg" alt="upgrade plan" />
+                            <p className='font-normal text-base text-[#333333]'>Upgrade Plan</p>
+                        </div>
+
+                        <p className='text-sm font-normal text-[#6F6F6F] text-left'>
+                            Upgrade plan to uncover more insights to grow your business
+                        </p>
+                    </button>
+                </div>
+            </div>
         </section>
     )
 }
