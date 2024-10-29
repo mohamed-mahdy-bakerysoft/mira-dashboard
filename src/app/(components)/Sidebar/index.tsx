@@ -2,9 +2,12 @@ import React from 'react'
 import SidebarLinks from '../SidebarLinks'
 import { X } from 'lucide-react'
 
+interface sideBarProps {
+    isSidebarCollapsed: boolean,
+    toggleSidebar: void,
+}
 
-
-const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: any) => {
+const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps ) => {
    
     return (
         // <div className="absolute hidde block h-screen z-20 top-0 lg:hidden w-[350px] duration-300 bg-white">
@@ -19,7 +22,7 @@ const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: any) => {
 
                     <button type="button"
                         className="lg:hidden absolute top-1/2 right-1 -translate-y-1/2 border-2 border-[#313030] py-1.5 px-1.5 rounded-md focus:bg-[#cccccc2c] opacity-70 focus:opacity-100 duration-100"
-                        onClick={toggleSidebar}
+                        onClick={() => toggleSidebar}
                     >
                         <X size={20} />
                     </button>

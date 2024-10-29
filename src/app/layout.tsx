@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Poppins, Rethink_Sans } from 'next/font/google';
+import { Rethink_Sans } from 'next/font/google';
 import "./globals.css";
 import DashboardWrapper from "./dashboardWrapper";
 
