@@ -4,7 +4,7 @@ import { X } from 'lucide-react'
 
 interface sideBarProps {
     isSidebarCollapsed: boolean,
-    toggleSidebar: void,
+    toggleSidebar: () => void,
 }
 
 const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps ) => {

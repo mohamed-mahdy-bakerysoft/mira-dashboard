@@ -11,7 +11,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
     const toggleSidebar = () => {
-        setIsSidebarCollapsed(!isSidebarCollapsed);
+        setIsSidebarCollapsed((prevState) => !prevState);
     }
 
     return (
@@ -26,7 +26,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
             <div className='relative w-full h-screen flex flex-row z-10'>
 
                 <Sidebar isSidebarCollapsed={isSidebarCollapsed}
-                    toggleSidebar={toggleSidebar()}
+                    toggleSidebar={toggleSidebar}
                 />
                 <section className='relative z-10 w-full  pb-20 px-7 sm:px-16 overflow-y-scroll overflow-x-hidden duration-200'>
                     <Navbar />
