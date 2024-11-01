@@ -7,11 +7,10 @@ interface sideBarProps {
     toggleSidebar: () => void,
 }
 
-const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps ) => {
-   
+const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps) => {
+
     return (
-        // <div className="absolute hidde block h-screen z-20 top-0 lg:hidden w-[350px] duration-300 bg-white">
-        <section className={`${isSidebarCollapsed ?  "hidden": "block"} lg:relative absolute md:hidden lg:block z-20 w-full py-1 px-4 lg:px-8 md:w-[31.5%] lg:w-[25%] xl:w-[20%] bg-white duration-300 overflow-hidden h-full border-r border-[#EBEBEB]`}>
+        <section className={`${isSidebarCollapsed ? "hidden" : "block max-w-[300px]"} lg:relative absolute md:hidden lg:block z-20 w-ful py-1 px-4 lg:px-8 md:w-[31.5%] lg:w-[25%] xl:w-[20%] bg-white transition-all duration-1000 overflow-hidden h-full border-r border-[#EBEBEB]`}>
 
             <div className='w-full h-full max-h-full flex flex-col overflow-hidden items-start justify-between gap-y-0.5'>
                 {/* SIDEBAR LOGO */}
@@ -22,7 +21,7 @@ const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps ) => {
 
                     <button type="button"
                         className="lg:hidden absolute top-1/2 right-1 -translate-y-1/2 border-2 border-[#313030] py-1.5 px-1.5 rounded-md focus:bg-[#cccccc2c] opacity-70 focus:opacity-100 duration-100"
-                        onClick={() => toggleSidebar}
+                        onClick={toggleSidebar}
                     >
                         <X size={20} />
                     </button>
@@ -88,8 +87,6 @@ const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps ) => {
             </div>
 
         </section>
-
-        // </div>
     )
 }
 

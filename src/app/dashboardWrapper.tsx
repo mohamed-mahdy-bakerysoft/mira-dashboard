@@ -17,7 +17,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <main className='rethink_sans'>
 
-            <button className={`${isSidebarCollapsed ? "block" : "hidden"}  fixed z-20 flex flex-row items-center justify-center w-[60px] h-[60px] rounded-full bg-[#A57CCB] bottom-14 sm:bottom-20 right-10 sm:right-20 lg:hidden`}
+            <button className={`${isSidebarCollapsed ? "block" : "hidden"} fixed z-20 flex flex-row items-center justify-center w-[60px] h-[60px] rounded-full bg-[#A57CCB] bottom-14 sm:bottom-20 right-10 sm:right-20 lg:hidden`}
                 onClick={toggleSidebar}
             >
                 <Menu size={24} color='white' />

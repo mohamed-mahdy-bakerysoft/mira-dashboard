@@ -34,7 +34,7 @@ const Navbar = () => {
                                 />
                             </button>
 
-                            <button type='button' onClick={() => toggleProfile()}
+                            <button type='button' onClick={toggleProfile}
                             className='flex flex-row items-center justify-end gap-x-2 pl-1 pr-1.5 py-1 bg-[#FAFBFB] border border-[#E2E4E9] rounded-full'>
                                 <img src="./user-profile-image.svg"
                                     alt="profile avatar"
@@ -44,7 +44,7 @@ const Navbar = () => {
                         </div>
                         
                         {/* MANAGE PROFILE DROPDOWN */}
-                        <div className={`${isProfileOpen ? 'block' : 'hidden'} absolute w-[280px] right-0 p-10 mt-5 rounded-md shadow-md z-50 bg-[#FCFCFC]`}>
+                        <div className={`${isProfileOpen ? 'block' : 'hidden'} absolute w-[280px] right-0 p-10 mt-5 rounded-md shadow-md z-50 bg-[#FCFCFC] duration-100`}>
                             <img src="./user-profile-image.svg"
                                 alt="profile avatar"
                                 className='relative mx-auto w-[60px] h-[60px] rounded-full'
