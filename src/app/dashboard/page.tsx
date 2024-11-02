@@ -29,15 +29,16 @@ const Dashboard = () => {
         </div>
 
         <div className='relative z-10 mt-16 flex flex-row items-start justify-start gap-10 flex-wrap'>
-          <PlanCard planName='Growing Businesses'
-            price={1000}
-            description='For businesses, social media managers, agencies looking to scale further'
-            features={GrowingBusinessesFeatures}
-          />
           <PlanCard planName='Early Stage'
             price={300}
             description='Ideal for early stage businesses and startups'
             features={EarlyStageFeatures}
+          />
+          
+          <PlanCard planName='Growing Businesses'
+            price={1000}
+            description='For businesses, social media managers, agencies looking to scale further'
+            features={GrowingBusinessesFeatures}
           />
         </div>
       </div>

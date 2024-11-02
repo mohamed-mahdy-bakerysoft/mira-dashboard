@@ -10,7 +10,7 @@ interface sideBarProps {
 const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps) => {
 
     return (
-        <section className={`${isSidebarCollapsed ? "hidden" : "block max-w-[300px]"} lg:relative absolute md:hidden lg:block z-20 w-ful py-1 px-4 lg:px-8 md:w-[31.5%] lg:w-[25%] xl:w-[20%] bg-white transition-all duration-1000 overflow-hidden h-full border-r border-[#EBEBEB]`}>
+        <section className={`${isSidebarCollapsed ? "hidden" : "block right- max-w-[300px]"} lg:relative absolute md:hidden lg:block z-20 w-full py-1 px-4 lg:px-8 md:w-[31.5%] lg:w-[25%] xl:w-[20%] bg-white transition-all duration-1000 overflow-hidden h-full border-r border-[#EBEBEB]`}>
 
             <div className='w-full h-full max-h-full flex flex-col overflow-hidden items-start justify-between gap-y-0.5'>
                 {/* SIDEBAR LOGO */}

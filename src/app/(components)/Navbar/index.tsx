@@ -51,7 +51,7 @@ const Navbar = () => {
                             />
 
                             <p className='my-3 capitalize text-center text-xl text-gray-700'>
-                                Hello, <span className='font-bold capitalize'>!</span>
+                                Hello, <span className='font-bold capitalize'>Maclemon!</span>
                             </p>
 
                             <div className='flex flex-col w-full gap-2 mt-3'>
