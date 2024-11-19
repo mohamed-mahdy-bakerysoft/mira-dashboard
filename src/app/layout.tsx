@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Rethink_Sans } from 'next/font/google';
 import "./globals.css";
 import DashboardWrapper from "./dashboardWrapper";
+import ProfileWrapper from "./profileWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,9 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${rethinkSans.variable} antialiased`}
       >
-        <DashboardWrapper>
-          {children}
-        </DashboardWrapper>
+        {children}
       </body>
     </html>
   );

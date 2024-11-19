@@ -1,5 +1,5 @@
 import React from 'react'
-import SidebarLinks from '../SidebarLinks'
+import SidebarLinks from '../../../(components)/SidebarLinks'
 import { X } from 'lucide-react'
 
 interface sideBarProps {
@@ -29,7 +29,7 @@ const Sidebar = ({ isSidebarCollapsed, toggleSidebar }: sideBarProps) => {
 
                 {/* LINKS & NAVIGATIONS */}
                 <div className="h-full w-full flex flex-col items-start justify-start">
-                    <SidebarLinks href='/home' label='Home' icon='/icons/menu-home_icon.svg' />
+                    <SidebarLinks href='/' label='Home' icon='/icons/menu-home_icon.svg' />
 
                     <div className="h-full w-full my-1.5 flex flex-col items-start justify-between">
                         {/* UPPER LINKS */}

@@ -1,11 +1,16 @@
 'use client'
 
 import { ChevronDown } from 'lucide-react'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
 
 
 const Navbar = () => {
     const [isProfileOpen, setisProfileOpen] = useState(false);
+
+    const pathname = usePathname();
+    const profile = pathname === "/profile";
 
     const toggleProfile = () => {
         setisProfileOpen(!isProfileOpen);
@@ -18,7 +23,7 @@ const Navbar = () => {
 
                     {/* rightside | LOGO */}
                     <div className=' lg:hidden'>
-                        <img src="./logo.svg"
+                        <img src={`${profile ? "./logo_profile.svg" : "./logo.svg"}`}
                             alt="Mira"
                             className='w-[65px] h-auto'
                         />
@@ -35,14 +40,14 @@ const Navbar = () => {
                             </button>
 
                             <button type='button' onClick={toggleProfile}
-                            className='flex flex-row items-center justify-end gap-x-2 pl-1 pr-1.5 py-1 bg-[#FAFBFB] border border-[#E2E4E9] rounded-full'>
+                                className='flex flex-row items-center justify-end gap-x-2 pl-1 pr-1.5 py-1 bg-[#FAFBFB] border border-[#E2E4E9] rounded-full'>
                                 <img src="./user-profile-image.svg"
                                     alt="profile avatar"
                                 />
                                 <ChevronDown size={20} color='#6F6F6F' />
                             </button>
                         </div>
-                        
+
                         {/* MANAGE PROFILE DROPDOWN */}
                         <div className={`${isProfileOpen ? 'block' : 'hidden'} absolute w-[280px] right-0 p-10 mt-5 rounded-md shadow-md z-50 bg-[#FCFCFC] duration-100`}>
                             <img src="./user-profile-image.svg"
@@ -56,11 +61,13 @@ const Navbar = () => {
 
                             <div className='flex flex-col w-full gap-2 mt-3'>
                                 <button type='button'
-                                    className='px-4 py-2 text-xs md:text-sm w-full font-medium text-gray-900 border border-[#BEBEBE] rounded-full duration-200'>
-                                    Mangage your profile
+                                    className={`${profile ? "hidden" : ""} px-4 py-2 text-xs md:text-sm w-full font-medium text-gray-900 border border-[#BEBEBE] rounded-full duration-200`}>
+                                    <Link href='/profile'>Mangage your profile</Link> 
                                 </button>
 
-                                <button className='px-4 py-2 text-xs md:text-sm w-full font-medium text-red-500 border border-[#BEBEBE] rounded-full duration-200'>Logout</button>
+                                <button className='px-4 py-2 text-xs md:text-sm w-full font-medium text-red-500 border border-[#BEBEBE] rounded-full duration-200'>
+                                    Logout
+                                </button>
                             </div>
                         </div>
                     </div>
