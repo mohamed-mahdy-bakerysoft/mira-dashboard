@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Rethink_Sans } from 'next/font/google';
 import "./globals.css";
-import DashboardWrapper from "./dashboardWrapper";
-import ProfileWrapper from "./profileWrapper";
+// import DashboardWrapper from "./dashboardWrapper";
+// import ProfileWrapper from "./profileWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
