@@ -17,10 +17,10 @@ const Sidebar = () => {
 					</div>
 
 					<div className="flex w-full flex-col gap-4">
-						<SidebarLinks href='/' label='Profile' icon={User} />
-						<SidebarLinks href='/settings' label='Settings' icon={Settings} />
-						<SidebarLinks href='/payments' label='Payments' icon={CreditCard} />
-						<SidebarLinks href='/customer-support' label='Customer Support' icon={Headset} />
+						<SidebarLinks href='/profile' label='Profile' icon={User} />
+						<SidebarLinks href='/profile/settings' label='Settings' icon={Settings} />
+						<SidebarLinks href='/profile/payments' label='Payments' icon={CreditCard} />
+						<SidebarLinks href='/profile/support' label='Customer Support' icon={Headset} />
 					</div>
 				</div>
 
