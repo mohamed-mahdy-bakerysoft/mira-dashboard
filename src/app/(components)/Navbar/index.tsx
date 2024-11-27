@@ -18,12 +18,12 @@ const Navbar = () => {
 
     return (
         <header id='navbar' className='relative w-full'>
-            <div className='w-full flex flex-col items-center justify-between pt-10 px-5 sm:px-0 pb-6 gap-y-5'>
+            <div className='w-full flex flex-col items-center justify-between pt-5 sm:px-0 pb-6 gap-y-5'>
                 <div className="w-full flex items-center justify-between lg:justify-end">
 
                     {/* rightside | LOGO */}
                     <div className=' lg:hidden'>
-                        <img src={`${profile ? "./logo_profile.svg" : "./logo.svg"}`}
+                        <img src={`${profile ? "/logo_profile.svg" : "/logo.svg"}`}
                             alt="Mira"
                             className='w-[65px] h-auto'
                         />
@@ -41,10 +41,11 @@ const Navbar = () => {
 
                             <button type='button' onClick={toggleProfile}
                                 className='flex flex-row items-center justify-end gap-x-2 pl-1 pr-1.5 py-1 bg-[#FAFBFB] border border-[#E2E4E9] rounded-full'>
-                                <img src="./user-profile-image.svg"
+                                <img src="/user-profile-image.svg"
                                     alt="profile avatar"
+                                    className='w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full'
                                 />
-                                <ChevronDown size={20} color='#6F6F6F' />
+                                <ChevronDown size={12} color='#6F6F6F' fill='#6F6F6F' />
                             </button>
                         </div>
 
