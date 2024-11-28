@@ -13,6 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+
+    fontFamily: {
+      inter: ["var(--font-inter)", "sans-serif"],
+      rethinkSans: ["var(--font-rethink-sans)", "sans-serif"],
+    },
   },
   plugins: [],
 };

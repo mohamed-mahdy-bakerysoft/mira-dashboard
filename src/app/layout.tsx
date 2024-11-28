@@ -1,6 +1,6 @@
 import type { Metadata } from "next";;
 import "./globals.css";
-import { geistMono, geistSans, rethinkSans } from "./font";
+import { geistMono, geistSans, inter, rethinkSans } from "./font";
 
 export const metadata: Metadata = {
   title: "The ChatGPT of Businesses",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${rethinkSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${rethinkSans.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
