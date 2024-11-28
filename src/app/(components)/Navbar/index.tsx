@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isProfileOpen, setisProfileOpen] = useState(false);
 
     const pathname = usePathname();
-    const profile = pathname === "/profile";
+    const profile = pathname === "/profile" || pathname?.startsWith("/profile/");
 
     const toggleProfile = () => {
         setisProfileOpen(!isProfileOpen);

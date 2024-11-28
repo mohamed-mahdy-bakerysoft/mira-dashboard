@@ -1,7 +1,10 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import SidebarLinks from '../SidebarLinks'
 import { CreditCard, Facebook, Headset, Instagram, Linkedin, Settings, Twitter, User, XSquare, Youtube } from 'lucide-react'
+import Link from 'next/link'
 
 
 const Sidebar = () => {
@@ -10,8 +13,9 @@ const Sidebar = () => {
 			<div className="flex flex-col min-h-[100dvh] justify-between h-full">
 				<div>
 					<div className="flex lg:justify-center justify-between items-center pl-4 py-14">
-						<Image src="/logo_profile.svg" alt="logo" width={65} height={65} />
-
+						<Link href='/' >
+							<Image src="/logo_profile.svg" alt="logo" width={65} height={65} />
+						</Link>
 						<XSquare className='lg:hidden' />
 
 					</div>

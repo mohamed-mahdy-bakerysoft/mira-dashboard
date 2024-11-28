@@ -1,5 +1,6 @@
 import { LucideIcon } from 'lucide-react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 interface SidebarLinksProps {
@@ -9,8 +10,14 @@ interface SidebarLinksProps {
 }
 
 const SidebarLinks = ({ href, label, icon: Icon }: SidebarLinksProps) => {
+
+    const pathname = usePathname();
+    const isActive = pathname === href;
+
     return (
-        <Link href={href} className='hover:bg-white/80 hover:scale-[0.99] bg-transparent rounded-[10px] transition-all duration-200'>
+        <Link href={href}
+            className={`${isActive? 'bg-white': 'bg-transparent'} hover:bg-white/80 hover:scale-[0.99] rounded-[10px] transition-all duration-200`}
+        >
             <button className='flex gap-4 px-3 py-2 text-lg md:text-xl'>
                 <Icon />
                 <span>{label}</span>
