@@ -13,7 +13,7 @@ interface AppsProps {
 
 const Apps = ({appName, description, status, src, alt}: AppsProps) => {
     return (
-        <div className="sm:flex justify-between mt-10 items-center border-b-2 border-b-[#e2e4e9d7] pb-5">
+        <div className="sm:flex justify-between mt-10 items-center border-b-2 border-b-[#e2e4e9d7] pb-5 font-inter">
             <div className="flex gap-5">
                 <div className="min-w-12 min-h-12 max-w-12 max-h-12 rounded-full flex items-center justify-center border border-[#E2E4E9] shadow-sm shadow-[#E4E5E73D]">
                     <Image src={src}

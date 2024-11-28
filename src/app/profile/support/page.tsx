@@ -1,7 +1,7 @@
 import { Flag, Headphones, MessageCircleMore, Search } from 'lucide-react'
 import React from 'react'
-import FaqCard from '../components/FaqCard'
-import FaqAccordion from '../components/FaqAccordion'
+import FaqCard from './components/FaqCard'
+import FaqAccordion from './components/FaqAccordion'
 
 
 const Support = () => {
