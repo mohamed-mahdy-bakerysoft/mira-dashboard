@@ -1,5 +1,5 @@
 import React from 'react'
-import PlanCard from './PlanCard'
+import PlanCard from './components/PlanCard'
 
 const EarlyStageFeatures = [
   'Business Model Canvas Creation',
