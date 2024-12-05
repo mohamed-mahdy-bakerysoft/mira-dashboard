@@ -38,21 +38,33 @@ const Sidebar = () => {
 						</div>
 
 						<nav className="flex w-full flex-col gap-4">
-							<SidebarLinks href="/profile" label="Profile" icon={User} />
+							<SidebarLinks
+								href="/profile"
+								label="Profile"
+								icon={User}
+								onClick={toggleSidebar}
+								isDesktop={false}
+							/>
 							<SidebarLinks
 								href="/profile/settings"
 								label="Settings"
 								icon={Settings}
+								onClick={toggleSidebar}
+								isDesktop={false}
 							/>
 							<SidebarLinks
 								href="/profile/payments"
 								label="Payments"
 								icon={CreditCard}
+								onClick={toggleSidebar}
+								isDesktop={false}
 							/>
 							<SidebarLinks
 								href="/profile/support"
 								label="Customer Support"
 								icon={Headset}
+								onClick={toggleSidebar}
+								isDesktop={false}
 							/>
 						</nav>
 
@@ -114,21 +126,33 @@ const Sidebar = () => {
 						</div>
 
 						<div className="flex w-full flex-col gap-4">
-							<SidebarLinks href="/profile" label="Profile" icon={User} />
+							<SidebarLinks
+								href="/profile"
+								label="Profile"
+								icon={User}
+								onClick={toggleSidebar}
+								isDesktop
+							/>
 							<SidebarLinks
 								href="/profile/settings"
 								label="Settings"
 								icon={Settings}
+								onClick={toggleSidebar}
+								isDesktop
 							/>
 							<SidebarLinks
 								href="/profile/payments"
 								label="Payments"
 								icon={CreditCard}
+								onClick={toggleSidebar}
+								isDesktop
 							/>
 							<SidebarLinks
 								href="/profile/support"
 								label="Customer Support"
 								icon={Headset}
+								onClick={toggleSidebar}
+								isDesktop
 							/>
 						</div>
 					</nav>

@@ -51,7 +51,7 @@ const Navbar = () => {
 
                         {/* MANAGE PROFILE DROPDOWN */}
                         <div className={`${isProfileOpen ? 'block' : 'hidden'} absolute w-[280px] right-0 p-10 mt-5 rounded-md shadow-md z-50 bg-[#FCFCFC] duration-100`}>
-                            <img src="./user-profile-image.svg"
+                            <img src="/user-profile-image.svg"
                                 alt="profile avatar"
                                 className='relative mx-auto w-[60px] h-[60px] rounded-full'
                             />
